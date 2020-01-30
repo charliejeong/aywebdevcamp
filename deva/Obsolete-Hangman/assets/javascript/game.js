@@ -67,7 +67,7 @@ function endGame() {
 
 //this function will change the monster
 function changeMonster() {
-	var monsterArray = ["assets/images/monster1.jpg","assets/images/monster2.jpg","assets/images/monster3.jpg"];
+	var monsterArray = ["/images/monster1.jpg","/images/monster2.jpg","/images/monster3.jpg"];
 	var randomMonster = monsterArray[Math.floor(Math.random() * monsterArray.length)];
 		document.getElementById("monster").src = randomMonster;
 }
