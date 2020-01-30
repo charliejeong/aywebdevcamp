@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<!-- this is meta text -->
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<title>Obsolete Hangman</title>
+	
+	<link rel="stylesheet" type="text/css" href="/css/reset.css">
+	<link rel="stylesheet" type="text/css" href="/css/style.css">
+
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<link href="https://fonts.googleapis.com/css?family=Rye" rel="stylesheet">
+</head>
+	
+<body>
+	<div class="container">
+		
+		<section class="topWrapper">
+
+			<div class="row introRow">
+				<div class="col-12 col-xs-auto">
+				
+					<p class="bigIntro">
+						As technology progresses, many obsolete things refuse to be forgotten. Help them to rest in peace.
+					</p>
+
+					<p class="littleIntro">
+						Identify the obsolete monster to remove it from people's memories. Press any key from A-Z to get started.
+					</p>
+				
+				</div>
+			</div>
+
+		</section>
+
+
+		<section class="bottomWrapper">
+		
+			
+			<progress class="progress-bar-success" id="health" value="100" max="100"></progress>
+
+			<p id="guessed">Guessed Letters:</p>
+			<p id="points">I'm the number of words you guessed</p>
+
+
+			<div class="row imageRow">
+				<div class="col-xs-6 knightCol">
+					<img class="img-responsive pull-left knight" src="/images/knight.png" alt="knight">
+				</div>
+
+				<div class="col-xs-6 monsterCol">
+					<img class="img-responsive pull-right" id="monster" src="/images/monster1.jpg" alt="monster">
+				</div>
+
+			</div>
+
+			<p id="blanks">I get replaced by blanks</p>
+
+			
+
+		</section>
+		
+	</div>
+
+	
+
+
+
+	<script type="text/javascript" src="/javascript/game.js"></script>
+
+</body>
+</html>
